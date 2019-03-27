@@ -1,4 +1,4 @@
-package com.datastructures.heap;
+package com.datastructures.tree.heap;
 
 public class MaxHeap {
     private int[] heap;
