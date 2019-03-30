@@ -1,4 +1,4 @@
-package com.datastructures.tree.avl;
+package com.datastructures.tree.avltree;
 
 public class Node {
 
