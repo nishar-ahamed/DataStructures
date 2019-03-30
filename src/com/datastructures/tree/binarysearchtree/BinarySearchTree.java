@@ -62,7 +62,6 @@ public class BinarySearchTree {
 
     private TreeNode delete(TreeNode subtreeNode, int value) {
         if (subtreeNode == null) {
-            System.out.println(".." + subtreeNode);
             return subtreeNode;
         }
         if (value < subtreeNode.getData()) {
@@ -72,10 +71,8 @@ public class BinarySearchTree {
         } else {
             // if node tobe deleted have 0 or 1 child
             if (subtreeNode.getLeftNode() == null) {
-                System.out.println("..." + subtreeNode.getRightNode());
                 return subtreeNode.getRightNode();
             } else if (subtreeNode.getRightNode() == null) {
-                System.out.println("...." + subtreeNode.getLeftNode());
                 return subtreeNode.getLeftNode();
             }
 
@@ -86,7 +83,6 @@ public class BinarySearchTree {
             //delete the smallest value from right subtree
             subtreeNode.setRightNode(delete(subtreeNode.getRightNode(), subtreeNode.getData()));
         }
-        System.out.println("." + subtreeNode);
         return subtreeNode;
     }
 
