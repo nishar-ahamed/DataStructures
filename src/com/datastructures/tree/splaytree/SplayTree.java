@@ -83,10 +83,6 @@ public class SplayTree<T extends Comparable<T>> {
         } else {
             rootNode = null;
         }
-        node.setParentNode(null);
-        node.setLeftNode(null);
-        node.setRightNode(null);
-        node = null;
         this.size--;
     }
 
@@ -226,8 +222,9 @@ public class SplayTree<T extends Comparable<T>> {
 
         splayTree.printRoot();
 
-        System.out.println(splayTree.find(10));
-        splayTree.printRoot();
+        System.out.println(splayTree.find(-5));
+        System.out.println("Traverse : ");
+        splayTree.inOrderTraversal();
 
     }
 }
